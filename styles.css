@@ -1,119 +1,69 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #fff;
+body{
+  font-family:Arial;
 }
 
-.footer {
-  background: #000;
-  color: #fff;
-  padding: 40px 20px;
+footer{
+  background:#000;
+  color:#fff;
+  padding:40px;
 }
 
-/* Top strip */
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #444;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
+/* top section */
+
+.top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
 }
 
-.footer-logo h2 {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
+.logo_name{
+  font-size:24px;
+  font-weight:bold;
 }
 
-.footer-social a {
-  display: inline-block;
-  margin-left: 15px;
-  font-size: 20px;
-  color: #bbb;
-  transition: 0.3s;
+.media-icons a{
+  color:#fff;
+  margin-left:15px;
+  font-size:20px;
 }
 
-.footer-social a:hover {
-  color: #fff;
+/* link boxes */
+
+.link-boxes{
+  display:flex;
+  justify-content:space-between;
 }
 
-/* Main content */
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
+.box{
+  list-style:none;
 }
 
-.footer-col {
-  flex: 1 1 220px;
-  margin: 20px;
+.link_name{
+  font-weight:bold;
+  margin-bottom:10px;
 }
 
-.footer-col h3 {
-  margin-bottom: 15px;
-  font-size: 18px;
-  border-bottom: 2px solid #444;
-  padding-bottom: 5px;
+.box li{
+  margin:8px 0;
 }
 
-.footer-col ul {
-  list-style: none;
+.box li a{
+  text-decoration:none;
+  color:#ccc;
 }
 
-.footer-col ul li {
-  margin: 8px 0;
-}
+/* bottom */
 
-.footer-col ul li a {
-  color: #bbb;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer-col ul li a:hover {
-  color: #fff;
-}
-
-/* Bottom strip */
-.footer-bottom {
-  text-align: center;
-  margin-top: 30px;
-  border-top: 1px solid #444;
-  padding-top: 15px;
-  font-size: 14px;
-}
-
-.footer-bottom a {
-  color: #bbb;
-  text-decoration: none;
-}
-
-.footer-bottom a:hover {
-  color: #fff;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-top {
-    flex-direction: column;
-    text-align: center;
-  }
-  .footer-social {
-    margin-top: 15px;
-  }
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .footer-col {
-    margin: 10px 0;
-  }
+.bottom-details{
+  text-align:center;
+  margin-top:30px;
+  border-top:1px solid gray;
+  padding-top:10px;
 }
