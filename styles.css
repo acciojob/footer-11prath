@@ -15,6 +15,35 @@ body {
   padding: 40px 20px;
 }
 
+/* Top strip */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-logo h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 20px;
+  color: #bbb;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+/* Main content */
 .footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -53,18 +82,7 @@ body {
   color: #fff;
 }
 
-.media-icons a {
-  display: inline-block;
-  margin-right: 10px;
-  color: #bbb;
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.media-icons a:hover {
-  color: #fff;
-}
-
+/* Bottom strip */
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
@@ -84,6 +102,13 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-social {
+    margin-top: 15px;
+  }
   .footer-container {
     flex-direction: column;
     text-align: center;
